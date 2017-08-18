@@ -13,8 +13,9 @@ export class MyCofigProvider {
 
   private myConfig = {
     name: "jose",
-    idade: 45,
-    cidade: "sousa"
+    idade: 40,
+    cidade: "sousa",
+    rg: "3434343"
   }
 
   constructor(public http: Http) {
