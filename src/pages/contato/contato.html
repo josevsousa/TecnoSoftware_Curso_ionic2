@@ -1,0 +1,47 @@
+<!--
+  Generated template for the ContatoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary" >
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>  
+    </button>
+    <ion-title>contato</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <p class="texto">Enviar seu ID/Perfil do Deezer para aparecer sua lista no App</p>
+    <form>
+      <ion-list>
+        <ion-item>
+          <ion-label floating>Id Deezer Perfil (solo ID)</ion-label>
+          <ion-input type="text" name="deezerID" clearInput="true" required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label floating>Correio</ion-label>
+          <ion-input type="email" name="email" clearInput="true"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label floating>Comentários</ion-label>
+          <ion-textarea name="comentario"></ion-textarea>
+        </ion-item>
+        <ion-item>
+          <ion-label >Não sou um robo</ion-label>
+          <ion-checkbox required></ion-checkbox>
+        </ion-item>
+        <ion-list>
+          <button type="submit" ion-button full large icon-left block>
+            <ion-icon name="send"></ion-icon>
+            Enviar
+          </button>
+        </ion-list>
+      </ion-list>
+    </form>
+</ion-content>
