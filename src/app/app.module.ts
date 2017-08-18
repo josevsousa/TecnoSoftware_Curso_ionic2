@@ -13,6 +13,7 @@ import { ContatoPage } from '../pages/contato/contato';
 import { AcercaPage } from '../pages/acerca/acerca';
 import { PlaylistsPage } from '../pages/playlists/playlists';
 import { CancionesPage } from '../pages/canciones/canciones';
+import { MyCofigProvider } from '../providers/my-cofig/my-cofig';
 // import { DeezerServicoProvider } from '../providers/deezer-servico/deezer-servico';
 
 @NgModule({
@@ -45,7 +46,8 @@ import { CancionesPage } from '../pages/canciones/canciones';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    MyCofigProvider
     // DeezerServicoProvider
   ]
 })

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Http } from '@angular/http';
 import { PlaylistsPage } from '../playlists/playlists';
+import { MyCofigProvider } from '../../providers/my-cofig/my-cofig';
 
 import { DeezerServicoProvider } from '../../providers/deezer-servico/deezer-servico'; 
 
@@ -20,12 +21,17 @@ import { DeezerServicoProvider } from '../../providers/deezer-servico/deezer-ser
 })
 
 export class PerfilPage {
+  
+  public config: any;
 
   constructor(
     public navCtrl: NavController, 
     public navParams: NavParams,
-    public deezerServoProvider: DeezerServicoProvider 
+    public deezerServoProvider: DeezerServicoProvider ,
+    public myCofigProvider: MyCofigProvider
     ) {
+    // objeto config  
+    this.config = this.myCofigProvider.getMyConfig();
   }
 
   goToPlayList(userID){
