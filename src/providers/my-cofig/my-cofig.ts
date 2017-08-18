@@ -15,7 +15,7 @@ export class MyCofigProvider {
     name: "jose",
     idade: 45,
     cidade: "sousa",
-    rg: "121212"
+    rg: "12"
   }
 
   constructor(public http: Http) {
